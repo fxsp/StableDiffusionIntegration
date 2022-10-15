@@ -1,36 +1,19 @@
-This is an HDA and updated code that lets you create prompts with Houdini then fetch the output.
-You still need to run SD through Conda
+# SD_img2img_hda
 
-what the code esentially does is create a .json with your parameters, the .py then reads the json to create the images then once you click fetch_script it fetches the output and deletes the .json
+This is inspired by [WaffleBoyTom](https://github.com/WaffleBoyTom/StableDiffusionIntegration.git).
 
+So that the method is the same, just making the other StableDiffusion img2img to excute and view in Houdini.
 
-HOW TO :
+Since I've been used to use Redshift, the hda is made for it. You can reference any image path into the Input Image parameter.
 
-Set your parameters on the HDA then click Create Prompt
+Please read the instruction of [WaffleBoyTom](https://github.com/WaffleBoyTom/StableDiffusionIntegration.git) first.
 
-You need to edit the paths in the .bat files
+Here are steps I suggest to use my img2img hda, very much like [WaffleBoyTom](https://github.com/WaffleBoyTom/StableDiffusionIntegration.git).
+1. Download optimizedSD directory from [basujindal/stable-diffusion](https://github.com/basujindal/stable-diffusion.git) to your StableDiffusion root.
+2. Put optimized_img2img_SP.py into optimizedSD directory.
+3. Put bat files to anywhere then change file path in the bat files.
+4. Change the file path in the python module of the hda in the runSD() function.
+5. Bring in SD_img2img hda at /out in Houdini.
+6. "fetch images" button would create a cop2net in /out and images are in it.
 
-You need to edit the path to the .bat file in the python module of the HDA in the runSD() function
-
-You need to edit the config and DEFAULT_CKPT variables in the .py scripts
-
-You need to have the keyboard module installed inside of Houdini. if you have pip installed then just do : hython -m pip install keyboard
-
-If you don't have pip installed , the great Paul Ambrosiussen has a video on youtube explaining how you can install it
-
-
-if you haven't got Conda or anything: read these
-
-https://www.howtogeek.com/830179/how-to-run-stable-diffusion-on-your-pc-to-generate-ai-images/
-
-Demo video here (subscribe for more "cool" stuff)  : 
-
-https://youtu.be/sALAHsBlvy4
-
-
-Hope this works for you and you can get something out of it !
-
-Big thank you to everyone who's helped me with this : Dana Ericson on Facebook, Jenny from SideFx Support, Henry Foster over on the mops discord, Paul Ambrosiussen for the pip tutorial and Stack Overflow obviously
-
-
-Hit me up on Discord : WaffleboyTom#1929
+Don't forget install pip and keyboard module for Houdini Python.
