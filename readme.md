@@ -17,3 +17,6 @@ Here are steps I suggest to use my img2img hda, very much like [WaffleBoyTom](ht
 6. "fetch images" button would create a cop2net in /out and images are in it.
 
 Don't forget install pip and keyboard module for Houdini Python.
+
+If you wonder why there is only optimized img2img python script.
+My graphic can't handle original scripts, so that I can only test with optimized version.
