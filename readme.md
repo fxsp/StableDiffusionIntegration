@@ -16,6 +16,7 @@ Here are steps I suggest to use my img2img hda, very much like [WaffleBoyTom](ht
 5. Bring in SD_img2img hda at /out in Houdini.
 6. "fetch images" button would create a cop2net in /out and images are in it.
 7. https://youtu.be/JjICpRA_dlg
+
 The script reads png/jpg image only, remenber to render png/jpg format image.
 
 If you wonder why there is only optimized img2img python script.
